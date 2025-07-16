@@ -98,7 +98,7 @@ class MyCart extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => CheckoutPage()),
+                      MaterialPageRoute(builder: (context) => CheckoutPage(allProducts: cartProvider.cartItems)),
                     );
                   },
                   child: Container(

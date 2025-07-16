@@ -28,7 +28,8 @@ class Skincarepage extends StatelessWidget {
       backgroundColor: AppColors.primaryColor,
       appBar: AppBar(
         backgroundColor: AppColors.secondaryHeaderColor,
-        title: Center(child: Text("Skin Care", style: AppTextStyles.titleMedium)),
+        title: Text("Skin Care", style: AppTextStyles.titleMedium),
+        centerTitle: true,
       ),
       body: ListView.builder(
         padding: EdgeInsets.symmetric(vertical: 8),

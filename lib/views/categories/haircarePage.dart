@@ -22,7 +22,8 @@ class Haircarepage extends StatelessWidget {
       backgroundColor: AppColors.primaryColor,
       appBar: AppBar(
         backgroundColor: AppColors.secondaryHeaderColor,
-        title: Center(child: Text("Hair Care", style: AppTextStyles.titleMedium)),
+        title: Text("Hair Care", style: AppTextStyles.titleMedium),
+        centerTitle: true,
       ),
       body: ListView.builder(
         padding: EdgeInsets.symmetric(vertical: 8),

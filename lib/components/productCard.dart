@@ -34,8 +34,8 @@ class _ProductCardState extends State<ProductCard> {
       child: Stack(
         children: [
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-            padding: const EdgeInsets.all(10),
+            margin: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            padding: EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: AppColors.scaffoldBackgroundColor,
               borderRadius: BorderRadius.circular(12),

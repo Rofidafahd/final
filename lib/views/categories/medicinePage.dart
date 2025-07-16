@@ -58,7 +58,8 @@ class MedicinePage extends StatelessWidget {
       backgroundColor: AppColors.primaryColor,
       appBar: AppBar(
         backgroundColor: AppColors.secondaryHeaderColor,
-        title: Center(child: Text("Medicines", style: AppTextStyles.titleMedium)),
+        title: Text("Medicines", style: AppTextStyles.titleMedium),
+        centerTitle: true,
       ),
       body: ListView.builder(
         padding: EdgeInsets.symmetric(vertical: 8),
