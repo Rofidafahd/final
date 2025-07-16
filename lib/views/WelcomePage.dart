@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pharmaapp/src/AppColors.dart';
 import 'ButtonStyling.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});

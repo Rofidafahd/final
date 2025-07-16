@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:pharmaapp/components/categoryCard.dart';
 import 'package:pharmaapp/src/AppColors.dart';
 import 'package:pharmaapp/src/AppStyling.dart';
+import 'package:pharmaapp/views/categories/babycarePage.dart';
 import 'package:pharmaapp/views/categories/haircarePage.dart';
 import 'package:pharmaapp/views/categories/medicinePage.dart';
+import 'package:pharmaapp/views/my_cart.dart';
 import 'package:pharmaapp/views/categories/skincarePage.dart';
 import 'package:pharmaapp/views/categories/vitaminesPage.dart';
 import 'package:pharmaapp/views/categories/devicesPage.dart';
-import 'package:pharmaapp/views/categories/babycarePage.dart';
 
 class CategoriesPage extends StatelessWidget {
   const CategoriesPage({super.key});
@@ -16,7 +17,13 @@ class CategoriesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.primaryColor,
-      appBar: AppBar(
+      appBar: AppBar( 
+        leading:IconButton(onPressed:(){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => MyCart()),
+          );
+        }  , icon: Icon(Icons.shopping_cart, color: Colors.white)), 
         centerTitle: true,
         title: Text('Categories', style: AppTextStyles.titleMedium),
         backgroundColor: AppColors.secondaryHeaderColor,
@@ -78,7 +85,9 @@ class CategoriesPage extends StatelessWidget {
             ),
           ],
         ),
+    
       ),
+      
     );
   }
 }
